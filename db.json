@@ -1,46 +1,23 @@
-{ "users": [
-    {
-        "id": 1,
-        "name": "Andriy",
-        "sirname": "Moskalenko",
-        "photo_url": "https://raw.githubus...",
-        "balance": 1500
-    },
-    {
-        "id": 2,
-        "name": "Vova",
-        "sirname": "Petrenko",
-        "photo_url": "https://raw.githubus...",
-        "balance": 500
-    },
+{ "products": [
     {
         "id": 3,
-        "name": "Andriy",
-        "sirname": "Moskalenko",
-        "photo_url": "https://raw.githubus...",
-        "balance": 1500
-    }
-   ],
-   "products": [
-    {
-        "id": 3,
-        "name": "lays",
-        "sirname": "crips",
-        "photo_url": "https://producto.com.ua/image/cache/catalog/111/PEPSI/313194231-1000x1000.jpg",
-        "price": 600
+        "name": "Eren Eger",
+        "sirname": "anime bf",
+        "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tUQqos5GPQlQhKUzPGOie4SgxhaLo64mhA&s",
+        "price": 1000
     },
     {
         "id": 4,
-        "name": "lays",
-        "sirname": "crips",
-        "photo_url": "https://producto.com.ua/image/cache/catalog/111/PEPSI/313194231-1000x1000.jpg",
-        "price": 600
+        "name": "Levi",
+        "sirname": "anime bf",
+        "photo_url": "https://i.pinimg.com/236x/46/01/67/46016776db919656210c75223957ee39.jpg",
+        "price": 50000
     },
     {
         "id": 5,
-        "name": "lays",
-        "sirname": "crips",
-        "photo_url": "https://producto.com.ua/image/cache/catalog/111/PEPSI/313194231-1000x1000.jpg",
+        "name": "Jean Kirstein",
+        "sirname": "anime bf",
+        "photo_url": "https://static.wikia.nocookie.net/shingekinokyojin/images/3/38/Jean_Kirschtein_%28Anime%29_character_image.png/revision/latest?cb=20210303234458&path-prefix=ru",
         "price": 600
     }
    ]
