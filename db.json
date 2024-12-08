@@ -1,24 +1,45 @@
 { "products": [
     {
-        "id": 3,
-        "name": "Eren Eger",
+        "id": 1,
+        "name": "Eren Jaeger",
         "sirname": "anime bf",
         "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tUQqos5GPQlQhKUzPGOie4SgxhaLo64mhA&s",
         "price": 1000
     },
     {
-        "id": 4,
+        "id": 2,
         "name": "Levi",
         "sirname": "anime bf",
         "photo_url": "https://i.pinimg.com/236x/46/01/67/46016776db919656210c75223957ee39.jpg",
         "price": 50000
     },
     {
-        "id": 5,
+        "id": 3,
         "name": "Jean Kirstein",
         "sirname": "anime bf",
         "photo_url": "https://static.wikia.nocookie.net/shingekinokyojin/images/3/38/Jean_Kirschtein_%28Anime%29_character_image.png/revision/latest?cb=20210303234458&path-prefix=ru",
-        "price": 600
+        "price": 1000
+    }
+    {
+        "id": 4,
+        "name": "Conny Springer",
+        "sirname": "anime bf",
+        "photo_url": "https://static.wikia.nocookie.net/shingekinokyojin/images/3/37/Conny_Springer_%28Anime%29_character_image.png/revision/latest?cb=20231105195357",
+        "price": 1000
+    },
+    {
+        "id": 5,
+        "name": "Erwin Smith",
+        "sirname": "anime bf",
+        "photo_url": "https://static.wikia.nocookie.net/shingekinokyojin/images/d/de/Erwin_Smith_%28Anime%29_character_image.png/revision/latest?cb=20190604212647",
+        "price": 5300
+    },
+    {
+        "id": 6,
+        "name": "Zeke Jaeger",
+        "sirname": "anime bf",
+        "photo_url": "https://static.wikia.nocookie.net/shingekinokyojin/images/4/40/Zeke_Jaeger_%28Anime%29_character_image.png/revision/latest?cb=20231105181636",
+        "price": 100
     }
    ]
 }
