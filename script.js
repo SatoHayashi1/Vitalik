@@ -3,7 +3,7 @@ let productsArray = [];
 let xhr = new XMLHttpRequest();
 let url = 'https://my-json-server.typicode.com/SatoHayashi1/Vitalik';
 xhr.open('GET',url + '/products');
-xhr.responseType = 'json'
+xhr.responseType = 'json',
 xhr.onload = function() {
     productsArray = xhr.response
     productsGrid.innerHTML = null;
