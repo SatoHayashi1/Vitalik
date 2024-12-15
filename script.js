@@ -36,3 +36,7 @@ function addProductToCart(id) {
     })
     cart.push(product)
 }
+if(localStorage.getItem('cart')) {
+         cart = JSON.parse(localStorage.getItem('cart'));
+         drawCartProducts();
+    }
