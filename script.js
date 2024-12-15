@@ -1,5 +1,7 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
+let cartProd = document.getElementById('cart-products')
+let cart = []
 let xhr = new XMLHttpRequest();
 let url = 'https://my-json-server.typicode.com/SatoHayashi1/Vitalik';
 xhr.open('GET',url + '/products');
@@ -28,5 +30,4 @@ function openCart() {
     cartProd.classList.toggle('hide');
 }
 
-let cartProd = document.getElementById('cart-products')
-let cart = ()
+
