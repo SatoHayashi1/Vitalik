@@ -4,6 +4,11 @@ let cartProd = document.getElementById('cart-products')
 let cart = []
 let xhr = new XMLHttpRequest();
 let url = 'https://my-json-server.typicode.com/SatoHayashi1/Vitalik';
+let my_headers = {
+    "context-type": "application/json",
+    "x-apikey": "6768232ee705334d8c3584ec",
+    "cache-control": "no-cache"
+}
 xhr.open('GET',url + '/products');
 xhr.responseType = 'json',
 xhr.onload = function() {
