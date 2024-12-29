@@ -77,7 +77,7 @@ function complete(id) {
             alert('Server error. Try again later');
         }
     }
-    xhr.open("PUT", "https://attack-1f19.restdb.io/rest/mens"+id);
+    xhr.open("PUT", "https://attack-1f19.restdb.io/rest/order"+id);
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
     xhr.setRequestHeader("cache-control", "no-cache");
