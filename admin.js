@@ -21,7 +21,7 @@ productForm.addEventListener('submit', function(event){
     };
     xhr.open("POST", "https://attack-1f19.restdb.io/rest/mens");
     xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+    xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
     xhr.setRequestHeader("cache-control", "no-cache");
     xhr.send(data);
 })
@@ -30,7 +30,7 @@ let xhr = new XMLHttpRequest();
 xhr.open("GET", "https://attack-1f19.restdb.io/rest/mens");
 xhr.responseType = 'json'
 xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
 xhr.setRequestHeader("cache-control", "no-cache");
 xhr.onload = function() {
     xhr.response.forEach(function(order){
@@ -79,7 +79,7 @@ function complete(id) {
     }
     xhr.open("PUT", "https://attack-1f19.restdb.io/rest/mens"+id);
     xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+    xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
     xhr.setRequestHeader("cache-control", "no-cache");
     xhr.send(data);
 }

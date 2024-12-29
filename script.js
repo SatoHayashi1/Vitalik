@@ -4,7 +4,7 @@ let xhr = new XMLHttpRequest();
 let url = 'https://attack-1f19.restdb.io/rest';
 xhr.open('GET',url + '/products');
 xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
 xhr.setRequestHeader("cache-control", "no-cache");
 xhr.responseType = 'json'
 xhr.onload = function() {
@@ -106,7 +106,7 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url + "https://attack-1f19.restdb.io/rest");
       xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+      xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
       xhr.setRequestHeader("cache-control", "no-cache");
       xhr.send(data);
       modal.style.display = "none";
