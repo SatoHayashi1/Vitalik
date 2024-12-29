@@ -2,9 +2,9 @@ let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
 let url = 'https://attack-1f19.restdb.io/rest';
-xhr.open('GET',url + '/mens');
+xhr.open('GET',url + '/products');
 xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
+xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
 xhr.setRequestHeader("cache-control", "no-cache");
 xhr.responseType = 'json'
 xhr.onload = function() {
@@ -16,7 +16,7 @@ xhr.onload = function() {
         pElem.classList.add('product');
         pElem.innerHTML = `
             <h2 class='product-name'>${p.name}</h2>
-            <img class='product-photo' src='${p.photo_ur1}' alt='${p.name}'>
+            <img class='product-photo' src='${p.photo_url}' alt='${p.name}'>
             <p class='product-price'><b>Price: </b>${p.price}$</p>
             <p class='product-description'><b>Description: </b>${p.description}</p>
             <button onclick="addProductToCart('${p._id}')">Buy</button>
@@ -53,21 +53,64 @@ function drawCartProducts() {
             <p><img src="${p.photo_url}"> ${p.name} |${p.price}$</p>
             <hr>
         `;
-        sum += p.price;
+        sum += +p.price;
     });
     cartProd.innerHTML += `
         <p>Total Price: ${sum}$</p>
         <button onclick="buyAll()">Buy All</button>
     `;
 }
-function buyAll() {
-    cart = [];
-    cartProd.innerHTML = 'Money was withdrawn from your credit card';
-    localStorage.setItem("cart", '[]');
+let orderBlock = document.getElementById('order-block');
+// Get the modal
+let modal = document.getElementById('myModal');
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName('close')[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = 'none';
 }
-function buyAll(){
-    modal.style.display = "block"
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+function buyAll() {
+    modal.style.display = "block";
+    let sum = 0;
+    orderBlock.innerHTML = null;
+    cart.forEach(function(p){
+        orderBlock.innerHTML += `
+            <div class="item">
+                <img width="100px" src="${p.photo_url}">
+                <h2>${p.name} | ${p.price}$</h2>
+            </div>
+        `;
+        sum += +p.price;
+    });
+    document.getElementById('price').innerHTML = sum + '$';
 }
 function openCart() {
     cartProd.classList.toggle('hide');
 }
+document.getElementById('order-form').addEventListener('submit', function(e) {
+    e.preventDefault();//
+    let data = JSON.stringify({
+        "name": e.target['name'].value,
+        "address": e.target['address'].value,
+        "phone": e.target['phone'].value,
+        "post_number": e.target['post_number'].value,
+        "status": "New",
+        "products": localStorage.getItem('cart')
+      });
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url + "https://attack-1f19.restdb.io/rest");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("x-apikey", "acefa834d3f1719ac40578c0efcd8849bd176");
+      xhr.setRequestHeader("cache-control", "no-cache");
+      xhr.send(data);
+      modal.style.display = "none";
+      cart = [];
+      cartProd.innerHTML = 'Money was withdrawn from your credit card';
+      localStorage.setItem("cart", '[]');
+})
