@@ -19,7 +19,7 @@ productForm.addEventListener('submit', function(event){
             alert('Server error. Try again later');
         }
     };
-    xhr.open("POST", "https://attack-1f19.restdb.io/rest/mens");
+    xhr.open("POST", "https://attack-1f19.restdb.io//rest/mens");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
     xhr.setRequestHeader("cache-control", "no-cache");
