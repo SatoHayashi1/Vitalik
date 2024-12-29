@@ -2,7 +2,7 @@ let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
 let url = 'https://attack-1f19.restdb.io/rest';
-xhr.open('GET',url + '/products');
+xhr.open('GET',url + '/mens');
 xhr.setRequestHeader("content-type", "application/json");
 xhr.setRequestHeader("x-apikey", "6768232ee705334d8c3584ec");
 xhr.setRequestHeader("cache-control", "no-cache");
