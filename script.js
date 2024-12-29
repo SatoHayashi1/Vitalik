@@ -65,6 +65,9 @@ function buyAll() {
     cartProd.innerHTML = 'Money was withdrawn from your credit card';
     localStorage.setItem("cart", '[]');
 }
+function buyAll(){
+    modal.style.display = "block"
+}
 function openCart() {
     cartProd.classList.toggle('hide');
 }

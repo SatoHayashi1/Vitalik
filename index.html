@@ -19,12 +19,35 @@
             <div id="cart-products" class="hide">Cart is empty</div>
             </div>
         </nav>
+        
     </header>
     <main>
         <div id="products-grid">
-            <img src="https://awesomereviews.ru/wp-content/uploads/2021/09/%D0%9F%D0%BE%D0%BB%D0%B5%D1%82-%D1%82%D0%B8%D1%82%D0%B0%D0%BD%D0%BE%D0%B2-752x440.jpg" alt="">
+            
 
         </div>
-    </main>
+       
+    </main> 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <center>Hello recruits</center>
+        <span class="close">&times;</span>
+    <div id="order-block">
+    </div>
+    <form id="order-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="address" placeholder="Delivery Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="number" name="post_number" placeholder="Post Office Number" required>
+        <h2>Total Price: <span id="price"></span></h2>
+        <input type="submit" value="Order">
+    </form>
+    </div>
+        </div>
+    </div>
+    
 </body>
+
+    
+</div>
 </html>
